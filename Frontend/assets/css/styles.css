@@ -1024,3 +1024,21 @@ content:'';
     width: 290;
   }
 }
+@media (max-width: 1120px) {
+.home__container {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two equal columns */
+  gap: 2rem; /* Adjust spacing between columns */
+  align-items: center; /* Vertically align content */
+  justify-content: center; /* Center the grid container */
+  max-width: 1200px; /* Limit container width */
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 1rem; /* Add some inner spacing */
+ }
+
+ .home__img {
+  width: 300px; /* Adjust image size */
+  height: auto;
+  object-fit: contain;
+ }
+}
