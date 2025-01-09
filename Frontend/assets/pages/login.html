@@ -5,23 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Log in || Sign up from</title>
-    <!-- Add this line in the <head> section -->
-        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-     <!-- font awesome icons -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <!-- css stylesheet -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="/Frontend/assets/pages/style.css">
 </head>
 <body>
     <div class="container" id="container">
-        <!-- Back button -->
         <a href="/Frontend/index.html" class="back-button">
             <button>Back</button>
         </a>
 
-    <div class="container" id="container">
         <div class="form-container sign-up-container">
-            <form action="#">
+            <form id="signupForm" onsubmit="handleSignup(event)">
                 <h1>Create Account</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -30,25 +25,27 @@
                 </div>
                 <span>or use your email for registration</span>
                 <div class="infield">
-                    <input type="text" placeholder="Name" />
+                    <input type="text" name="name" placeholder="Name" required/>
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="text" name="first_name" placeholder="First Name" required/>
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="password" placeholder="Password" />
+                    <input type="email" name="email" placeholder="Email" required/>
                     <label></label>
                 </div>
-                <a href="/Frontend/index.html">
-                    <button>Sign Up</button>
-                </a>
-                </a>
+                <div class="infield">
+                    <input type="password" name="password" placeholder="Password" required/>
+                    <label></label>
+                </div>
+                <button type="submit">Sign Up</button>
             </form>
         </div>
+
         <div class="form-container sign-in-container">
-            <form action="#">
+            <form id="loginForm" onsubmit="handleLogin(event)">
                 <h1>Log in</h1>
                 <div class="social-container">
                     <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
@@ -57,19 +54,18 @@
                 </div>
                 <span>or use your account</span>
                 <div class="infield">
-                    <input type="email" placeholder="Email" name="email"/>
+                    <input type="email" name="email" placeholder="Email" required/>
                     <label></label>
                 </div>
                 <div class="infield">
-                    <input type="password" placeholder="Password" />
+                    <input type="password" name="password" placeholder="Password" required/>
                     <label></label>
                 </div>
                 <a href="#" class="forgot">Forgot your password?</a>
-                <a href="/Frontend/index.html">
-                    <button>Log in</button>
-                </a>
+                <button type="submit">Log in</button>
             </form>
         </div>
+
         <div class="overlay-container" id="overlayCon">
             <div class="overlay">
                 <div class="overlay-panel overlay-left">
@@ -87,21 +83,76 @@
         </div>
     </div>
     
-    <!-- js code -->
     <script>
-        
+        // Your existing overlay code
         const container = document.getElementById('container');
         const overlayCon = document.getElementById('overlayCon'); 
         const overlayBtn = document.getElementById('overlayBtn');
+        
         overlayBtn.addEventListener('click', () => {
             container.classList.toggle('right-panel-active');
-
             overlayBtn.classList.remove('btnScaled');
-            window.requestAnimationFrame ( () => {
-            overlayBtn.classList.add('btnScaled');
-          });    
-         });
+            window.requestAnimationFrame(() => {
+                overlayBtn.classList.add('btnScaled');
+            });    
+        });
+    
+        // Add the new form handling functions here
+        async function handleSignup(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+    
+            try {
+                const response = await fetch('http://localhost:5000/api/users', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+    
+                if (response.ok) {
+                    alert('Signup successful!');
+                    window.location.href = '/Frontend/index.html';
+                } else {
+                    const error = await response.json();
+                    alert(error.message);
+                }
+            } catch (error) {
+                alert('An error occurred during signup');
+                console.error('Signup error:', error);
+            }
+        }
+    
+        async function handleLogin(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+            const data = Object.fromEntries(formData);
+    
+            try {
+                const response = await fetch('http://localhost:5000/api/users/login', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify(data)
+                });
+    
+                if (response.ok) {
+                    alert('Login successful!');
+                    window.location.href = '/Frontend/index.html';
+                } else {
+                    const error = await response.json();
+                    alert(error.message);
+                }
+            } catch (error) {
+                alert('An error occurred during login');
+                console.error('Login error:', error);
+            }
+        }
     </script>
-
 </body>
 </html>
