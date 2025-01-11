@@ -9,7 +9,7 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "muhammad rashid",
-  "license": "ISC",
+  "license": "ISC", 
   "description": "A backend server for user login/signup functionality with MongoDB integration.",
   "dependencies": {
     "bcrypt": "^5.1.1",
