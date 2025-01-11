@@ -8,10 +8,11 @@
     "dev": "nodemon Index.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "muhammad rashid",
   "license": "ISC",
-  "description": "",
+  "description": "A backend server for user login/signup functionality with MongoDB integration.",
   "dependencies": {
+    "bcrypt": "^5.1.1",
     "cors": "^2.8.5",
     "dotenv": "^16.4.7",
     "express": "^4.18.2",
