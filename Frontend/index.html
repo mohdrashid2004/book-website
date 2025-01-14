@@ -46,16 +46,16 @@
                         <span>Discount</span><!-- discount span-->
                      </a>
                   </li>
-                  <li class="nav__item">
-                     <a href="#new" class="nav__link">
-                        <i class="ri-bookmark-line"></i>
-                        <span>New Books</span>
+                  <li class="nav__item"> <!--  li class is nav__item-->
+                     <a href="#new" class="nav__link"> <!-- a class is nav__link-->
+                        <i class="ri-bookmark-line"></i><!-- new book icon-->
+                        <span>New Books</span><!-- new book span-->
                      </a>
                   </li>
-                  <li class="nav__item">
-                     <a href="#Testimonial" class="nav__link">
-                        <i class="ri-message-3-line"></i>
-                        <span>Testimonial</span>
+                  <li class="nav__item"> <!--li class is nav__item-->
+                     <a href="#Testimonial" class="nav__link"> <!-- a class is nav__link-->
+                        <i class="ri-message-3-line"></i> <!-- testimonial icon-->
+                        <span>Testimonial</span> <!-- testimonial span-->
                      </a>
                   </li>
                </ul>
@@ -63,71 +63,90 @@
 
             <nav class="nav__actions">
                <!--Search Button -->
-               <i class="ri-search-line search-button" id="search-button"></i>
+               <i class="ri-search-line search-button" id="search-button"></i> <!--icone with button-->
 
                <!--log-in button-->
-               <a href="/Frontend/assets/pages/login.html" class="login__link">
-                  <i class="ri-user-line login-button"></i>
+               <a href="/Frontend/assets/pages/login.html" class="login__link"> <!--sign up link-->
+                  <i class="ri-user-line login-button"></i> <!--icone with button-->
                </a>
 
                <!--theme button-->
-               <i class="ri-moon-line" change-theme id="theme-button"></i>
+               <i class="ri-moon-line" change-theme id="theme-button"></i> <!-- theme button icone--> 
             </nav>
          </nav>
       </header>
 
    <!--==================== SEARCH ====================-->
-   <div class="search" id="search-content">
+   <div class="search" id="search-content"> 
+      <!--search class--> 
       <form action="" class="search__form">
-         <i class="ri-search-line search__icon"></i>
-         <input type="search" placeholder="What are you looking for?" class="search__input">
+          <!--form class--> 
+         <i class="ri-search-line search__icon"></i> 
+         <!--search icon-->
+         <input type="search" placeholder="What are you looking for?" class="search_ _input"> 
+         <!--search input-->
       </form>
       
    <i class="ri-close-line search__close" id="search-close"></i>
+   <!--search close button-->
    </div>
 
 
       <!--==================== LOGIN ====================-->
     <div class="login grid" id="login-content">
-
+      <!--login class-->
+ 
       <i class="ri-close-line login__close" id="login-close"></i>
+      <!--login close button-->
     </div>
 
       <!--==================== MAIN ====================-->
       <main class="main">
+         <!--assigning main class-->
+
          <!--==================== HOME ====================-->
          <section class="home section" id="home">
+             <!--home class-->
             <div class="home__container container grid">
-               <div class="home__data">
-                  <h1 class="home__title">
-                     Browse & <br>
+               <!--  home container class-->
+               <div class="home__data"> <!-- home data class-->
+                  <h1 class="home__title"> <!--home title-->
+                     Browse & <br> 
                      Select E-Books
-                  </h1>
+                  </h1> <!--home title-->
 
-                  <p class="home__description">
+                  <p class="home__description"> <!--home description-->
                      Find the best e-books from your favorite 
                      writers, explore hundreds of books with all 
                      possible categories, take advantage of the 
                      50% discount and much more.
-                  </p>
+                  </p> <!--home description-->
 
-                  <a href="#" class="button">Browse More</a>
+                  <a href="#" class="button">Browse More</a> <!--button class-->
                </div>
 
-               <div class="home__image">
+               <div class="home__image"> <!--home image class-->
+                  <!--div class-->
                   <div class="home__swiper swiper">
+                     <!--home swiper class-->
                      <div class="swiper-wrapper">
+                        <!--swiper wrapper class-->
                         <article class="home__article swiper-slide">
+                           <!--home article class-->
                            <img src="assets/img/home-book-1.png" alt="image" class="home__img">
+                           <!--home image class-->
                         </article>
                         <article class="home__article swiper-slide">
                            <img src="assets/img/home-book-2.png" alt="image" class="home__img">
+                           <!--home image class-->
                         </article>
                         <article class="home__article swiper-slide">
                            <img src="assets/img/home-book-3.png" alt="image" class="home__img">
+                           <!--home image class-->
                         </article>
                         <article class="home__article swiper-slide ">
                            <img src="assets/img/home-book-4.png" alt="image" class="home__img">
+                           <!--home image class-->
                         </article>
                      </div>   
                   </div>
@@ -136,460 +155,480 @@
          </section>
 
          <!--==================== SERVICES ====================-->
+
+         <!--class services for servies section-->
          <section class="services section">
+            <!--services class-->
             <div class="services__container container grid">
+                                                               <!--services container class-->
                <article class="services__card">
-                  <i class="ri-truck-line"></i>
-                  <h3 class="services__title">Free Shipping</h3>
-                  <p class="services__description">Order More Than $100</p>
+                  <i class="ri-truck-line"></i>                 <!--truck icone-->
+                  <h3 class="services__title">Free Shipping</h3>    <!---services title class-->
+                  <p class="services__description">Order More Than $100</p> <!--services description-->
                </article>
 
-               <article class="services__card">
-                  <i class="ri-lock-2-line"></i>
-                  <h3 class="services__title">Secure Payment</h3>
-                  <p class="services__description">100% Secure Payment</p>
+               <article class="services__card">          <!-- services card class-->
+                  <i class="ri-lock-2-line"></i>      <!--icone class-->
+                  <h3 class="services__title">Secure Payment</h3> <!--services title-->
+                  <p class="services__description">100% Secure Payment</p> <!--services description-->
                </article>
 
-               <article class="services__card">
-                  <i class="ri-customer-service-2-line"></i>
-                  <h3 class="services__title">24/7 Support</h3>
-                  <p class="services__description">Call us anytime</p>
+               <article class="services__card">           <!--services card class-->
+                  <i class="ri-customer-service-2-line"></i>  <!--icone class-->
+                  <h3 class="services__title">24/7 Support</h3>  <!--services title class-->
+                  <p class="services__description">Call us anytime</p> <!--services description-->
                </article>
             </div>
          </section>
 
          <!--==================== FEATURED ====================-->
          <section class="featured section" id="featured">
-            <h2 class= "section__title">
+            <!--featured section-->
+            <h2 class= "section__title">   <!--section title-->
                Featured Books
             </h2>
             
-            <div class="featured container container">
-               <div class="featured__swiper swiper">
-                  <div class="swiper-wrapper">
-                     <article class="featured__card swiper-slide">
-                        <img src="assets/img/book-1.png" alt="image" class="featured__img">
+            <div class="featured container container">  <!--featured container class-->
+               <div class="featured__swiper swiper"> <!--featured swiper class-->
+                  <div class="swiper-wrapper">       <!--swiper wrapper-->
+                     <article class="featured__card swiper-slide">   <!--featured card class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <img src="assets/img/book-1.png" alt="image" class="featured__img"> 
+                        <!--featured image class-->
+
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices"> <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span> <!--featured discount class-->
+                           <span class="featured__price">$19.99</span> <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button> <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions">  <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button> <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button> <!--eye button-->
                         </div>
                      </article>
 
-                     <article class="featured__card swiper-slide">
-                        <img src="assets/img/book-2.png" alt="image" class="featured__img">
+                     <article class="featured__card swiper-slide"> <!--featured card class-->
+                        <img src="assets/img/book-2.png" alt="image" class="featured__img"> 
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices"> <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span> <!--featured discount class-->
+                           <span class="featured__price">$19.99</span> <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button> <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions"> <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button> <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button>    <!--eye button-->
                         </div>
                      </article>
 
-                     <article class="featured__card swiper-slide">
+                     <article class="featured__card swiper-slide"> <!--featured card class-->
                         <img src="assets/img/book-3.png" alt="image" class="featured__img">
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices"> <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span>  <!--featured discount class-->
+                           <span class="featured__price">$19.99</span>  <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button> <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions"> <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button>  <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button>  <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button>  <!--eye button-->
                         </div>
                      </article>
                      
-                     <article class="featured__card swiper-slide">
+                     <article class="featured__card swiper-slide"> <!--featured card class-->
                         <img src="assets/img/book-4.png" alt="image" class="featured__img">
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices">  <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span>  <!--featured discount class-->
+                           <span class="featured__price">$19.99</span>  <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button>  <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions"> <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button>  <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button>  <!--eye button-->
                         </div>
                      </article>
                      
-                     <article class="featured__card swiper-slide">
+                     <article class="featured__card swiper-slide"> <!--featured card class-->
                         <img src="assets/img/book-5.png" alt="image" class="featured__img">
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices">  <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span> <!--featured discount class-->
+                           <span class="featured__price">$19.99</span> <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button>  <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions"> <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button> <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button>  <!--eye button-->
                         </div>
                      </article>
                      
-                     <article class="featured__card swiper-slide">
+                     <article class="featured__card swiper-slide"> <!--featured card class-->
                         <img src="assets/img/book-6.png" alt="image" class="featured__img">
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices"> <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span> <!--featured discount class-->
+                           <span class="featured__price">$19.99</span> <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button> <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions"> <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button>  <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button>    <!--eye button-->
                         </div>
                      </article>
                      
-                     <article class="featured__card swiper-slide">
+                     <article class="featured__card swiper-slide"> <!--featured card class-->
                         <img src="assets/img/book-7.png" alt="image" class="featured__img">
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices"> <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span> <!--featured discount class-->
+                           <span class="featured__price">$19.99</span> <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button> <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions"> <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button> <!--heart button--> 
+                           <button><i class="ri-eye-line"></i></button> <!--eye button-->
                         </div>
                      </article>
                      
-                     <article class="featured__card swiper-slide">
+                     <article class="featured__card swiper-slide"> <!--featured card class-->
                         <img src="assets/img/book-8.png" alt="image" class="featured__img">
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices"> <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span> <!--featured discount class-->
+                           <span class="featured__price">$19.99</span> <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button> <!--button class-->
  
                         <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button> <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button> <!--eye button-->
                         </div>
                      </article>
                      
-                     <article class="featured__card swiper-slide">
+                     <article class="featured__card swiper-slide"> <!--featured card class-->
                         <img src="assets/img/book-9.png" alt="image" class="featured__img">
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices"> <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span> <!--featured discount class-->
+                           <span class="featured__price">$19.99</span> <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button> <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions"> <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button> <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button>  <!--eye button-->
                         </div>
                      </article>
                      
-                     <article class="featured__card swiper-slide">
+                     <article class="featured__card swiper-slide">  <!--featured card class-->
                         <img src="assets/img/book-10.png" alt="image" class="featured__img">
+                        <!--featured image class-->
 
-                        <h2 class="featured__title">Featured Book</h2>
-                        <div class="featured__prices">
-                           <span class="featured__discount">$11.99</span>
-                           <span class="featured__price">$19.99</span>
+                        <h2 class="featured__title">Featured Book</h2> <!--featured title class-->
+                        <div class="featured__prices"> <!--featured prices class-->
+                           <span class="featured__discount">$11.99</span> <!--featured discount class-->
+                           <span class="featured__price">$19.99</span> <!--featured price class-->
                         </div>
 
-                        <button class="button">Add To Cart</button>
+                        <button class="button">Add To Cart</button> <!--button class-->
  
-                        <div class="featured__actions">
-                           <button><i class="ri-search-2-line"></i></button>
-                           <button><i class="ri-heart-3-line"></i></button>
-                           <button><i class="ri-eye-line"></i></button>
+                        <div class="featured__actions"> <!--featured actions class-->
+                           <button><i class="ri-search-2-line"></i></button> <!--search button-->
+                           <button><i class="ri-heart-3-line"></i></button> <!--heart button-->
+                           <button><i class="ri-eye-line"></i></button> <!--eye button-->
                         </div>
                      </article>
                   </div>
 
-                  <div class="swiper-button-prev">
-                     <i class="ri-arrow-left-s-line"></i>
+                  <div class="swiper-button-prev"> <!--swiper button prev class-->
+                     <i class="ri-arrow-left-s-line"></i> <!--arrow left icon-->
                   </div>
 
-                  <div class="swiper-button-next">
-                     <i class="ri-arrow-right-s-line"></i>
+                  <div class="swiper-button-next"> <!--swiper button next class-->
+                     <i class="ri-arrow-right-s-line"></i> <!--arrow right icon-->
                   </div>   
                </div>
             </div>
          </section>
                     
          <!--==================== DISCOUNT ====================-->
-         <section class="discount section" id="discount">
-            <div class="discount__container container grid">
-               <div class="discount__data">
+         <section class="discount section" id="discount"> <!--discount section class-->
+            <div class="discount__container container grid"> <!--discount container class-->
+               <div class="discount__data"> <!--discount data class-->
                   <h2 class="discount__title section__title">
                      Up To 50% Discount
-                  </h2>
+                  </h2> <!--discount title class-->
 
-                  <p class="discount__description">
+                  <p class="discount__description">   
                      Take advantage of the discount days we 
                      have for you, buy books from your favorite 
                      writers, the more you buy, the more 
                      discounts we have for you.
-                  </p>
+                  </p> <!--discount description class-->
 
-                  <a href="#" class="button">Shop Now</a>
+                  <a href="#" class="button">Shop Now</a> <!--button class-->
                </div>
 
-               <div class="discount__images">
+               <div class="discount__images"> <!--discount images class-->
                   <img src="assets/img/discount-book-1.png" alt="image" class="discount__img1">
+                   <!--discount image 1 class-->
                   <img src="assets/img/discount-book-2.png" alt="image" class="discount__img2">
+                  <!--discount image 2 class-->
                </div>
             </div>
          </section>
 
          <!--==================== NEW BOOKS ====================-->
-         <section class="new section" id="new">
-            <h2 class="section__title">
+         <section class="new section" id="new"> <!--new section class-->
+            <h2 class="section__title"> 
                New Books
-            </h2>
-            <div class="new__container container">
-               <div class="new-swiper swiper">
-                  <div class="swiper-wrapper">
-                     <a href="#" class="new__card swiper-slide">
+            </h2> <!--new title class-->
+            <div class="new__container container"> <!--new container class-->
+               <div class="new-swiper swiper">  <!--new swiper class-->
+                  <div class="swiper-wrapper"> <!--swiper wrapper class-->
+                     <a href="#" class="new__card swiper-slide"> <!--new card class-->
                         <img src="assets/img/book-1.png" alt="image" class="new__img">
+                        <!--new image class-->
 
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
-                           <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           <div class="new__stars"> <!--new stars class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>
-                     <a href="#" class="new__card swiper-slide">
-                        <img src="assets/img/book-2.png" alt="image" class="new__img">
+                     <a href="#" class="new__card swiper-slide"> <!--new card class-->
+                        <img src="assets/img/book-2.png" alt="image" class="new__img"> 
+                        <!--new image class-->
 
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
                            <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>   
                      
-                     <a href="#" class="new__card swiper-slide">
+                     <a href="#" class="new__card swiper-slide"> <!--new card class-->
                         <img src="assets/img/book-3.png" alt="image" class="new__img">
-
+                        <!--new image class-->
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
                               <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
-                           <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           <div class="new__stars"> <!--new stars class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>  
                       <a href="#" class="new__card swiper-slide">
                         <img src="assets/img/book-4.png" alt="image" class="new__img">
-
+                         <!--new image class-->
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
                            <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>  
-                      <a href="#" class="new__card swiper-slide">
+                      <a href="#" class="new__card swiper-slide"> <!--new card class-->
                         <img src="assets/img/book-5.png" alt="image" class="new__img">
-
+                         <!--new image class-->
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
-                           <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           <div class="new__stars"> <!--new stars class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>  
                       <a href="#" class="new__card swiper-slide">
                         <img src="assets/img/book-6.png" alt="image" class="new__img">
-
+                          <!--new image class-->
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
                            <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a> 
-                      <a href="#" class="new__card swiper-slide">
+                      <a href="#" class="new__card swiper-slide"> <!--new card class-->
                         <img src="assets/img/book-7.png" alt="image" class="new__img">
-
+                         <!--new image class-->
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
-                           <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           <div class="new__stars"> <!--new stars class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i>  <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>   
-                     <a href="#" class="new__card swiper-slide">
+                     <a href="#" class="new__card swiper-slide"> <!--new card class-->
                         <img src="assets/img/book-8.png" alt="image" class="new__img">
-
+                          <!--new image class-->
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
-                           <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           <div class="new__stars"> <!--new stars class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>   
-                     <a href="#" class="new__card swiper-slide">
+                     <a href="#" class="new__card swiper-slide"> <!--new card class-->
                         <img src="assets/img/book-9.png" alt="image" class="new__img">
-
+                         <!--new image class-->
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
-                           <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           <div class="new__stars"> <!--new stars class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>   
                      <a href="#" class="new__card swiper-slide">
                         <img src="assets/img/book-10.png" alt="image" class="new__img">
-
+                          <!--new image class-->
                         <div>
 
-                           <h2 class="new__title">New Book</h2>
-                           <div class="new__prices">
-                              <span class="new__discount">$7.99</span>
-                              <span class="new__price">$14.99</span>
+                           <h2 class="new__title">New Book</h2> <!--new title class-->
+                           <div class="new__prices"> <!--new prices class-->
+                              <span class="new__discount">$7.99</span> <!--new discount class-->
+                              <span class="new__price">$14.99</span> <!--new price class-->
                            </div>
 
                            <div class="new__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-fill"></i> <!--star fill class-->
+                              <i class="ri-star-half-fill"></i> <!--star half fill class-->
                            </div>
                         </div>
                      </a>      
@@ -805,102 +844,102 @@
          </section>
 
          <!--==================== JOIN ====================-->
-         <section class="join section">
-            <div class="join__container">
+         <section class="join section"> <!-- join -->
+            <div class="join__container"> <!-- join container -->
                <img src="assets/img/join-bg.jpg" alt="image" class="join__bg">
-
-               <div class="join__data container grid">
-                  <h2 class="section__title join__title">
+                 <!--image background-->
+               <div class="join__data container grid">  <!-- join data  container-->
+                  <h2 class="section__title join__title"> 
                      Subscribe To Receive <br>
                      The Latest Updates
-                  </h2>
+                  </h2> <!-- section title -->
 
-                  <form action="" class="join__form">
-                     <input type="email" placeholder="Enter email" class="join__input">
-                     <button type="submit" class="join__button button">Subscribe</button>
+                  <form action="" class="join__form"> <!-- join form -->
+                     <input type="email" placeholder="Enter email" class="join__input"> <!-- join input -->
+                     <button type="submit" class="join__button button">Subscribe</button> <!-- join button -->
                   </form>
                </div>
             </div>
          </section>
 
          <!--==================== TESTIMONIAL ====================-->
-         <section class="testimonial section" id="testimonial">
-            <h2 class="section__title">
+         <section class="testimonial section" id="testimonial"> <!-- testimonial -->
+            <h2 class="section__title">  <!-- section title -->
                Customer Opinions
             </h2>
 
-            <div class="testimonial__container container">
-               <div class="testimonial-swiper swiper">
-                  <div class="swiper-wrapper">
-                     <article class="testimonial__card swiper-slide">
+            <div class="testimonial__container container"> <!-- testimonial container -->
+               <div class="testimonial-swiper swiper"> <!-- testimonial swiper -->
+                  <div class="swiper-wrapper"> <!-- swiper wrapper -->
+                     <article class="testimonial__card swiper-slide"> <!-- testimonial card -->
                         <img src="assets/img/testimonial-perfil-1.png" alt="image" class="testimonial__img">
-
-                           <h2 class="testimonial__title">Rial Loz</h2>
-                           <p class="testimonial__description">
+                          <!-- testimonial image -->
+                           <h2 class="testimonial__title">Rial Loz</h2> <!-- testimonial title -->
+                           <p class="testimonial__description"> <!-- testimonial description -->
                               The best website to buy books, the purchase 
                               is very easy to make and has great discounts.
-                           </p>
+                           </p> <!-- testimonial description -->
 
-                           <div class="testimonial__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           <div class="testimonial__stars"> <!-- testimonial stars -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i>  <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-half-fill"></i> <!--half star -->
                               
                            </div>
                      </article>
-                     <article class="testimonial__card swiper-slide">
+                     <article class="testimonial__card swiper-slide"> <!-- testimonial card -->
                         <img src="assets/img/testimonial-perfil-2.png" alt="image" class="testimonial__img">
-
-                           <h2 class="testimonial__title">Rial Loz</h2>
-                           <p class="testimonial__description">
+                          <!-- testimonial image -->
+                           <h2 class="testimonial__title">Rial Loz</h2> <!-- testimonial title -->
+                           <p class="testimonial__description"> <!-- testimonial description -->
                               The best website to buy books, the purchase 
                               is very easy to make and has great discounts.
-                           </p>
+                           </p> <!-- testimonial description -->
 
                            <div class="testimonial__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-half-fill"></i> <!--half star -->
                               
                            </div>
                      </article>
                      <article class="testimonial__card swiper-slide">
                         <img src="assets/img/testimonial-perfil-3.png" alt="image" class="testimonial__img">
-
-                           <h2 class="testimonial__title">Rial Loz</h2>
-                           <p class="testimonial__description">
+                         <!-- testimonial image -->
+                           <h2 class="testimonial__title">Rial Loz</h2> <!-- testimonial title -->
+                           <p class="testimonial__description"> <!-- testimonial description -->
                               The best website to buy books, the purchase 
                               is very easy to make and has great discounts.
-                           </p>
-
-                           <div class="testimonial__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           </p> <!-- testimonial description -->
+ 
+                           <div class="testimonial__stars"> <!-- testimonial stars -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-half-fill"></i> <!--half star -->
                               
                            </div>
                      </article>
-                     <article class="testimonial__card swiper-slide">
+                     <article class="testimonial__card swiper-slide"> <!-- testimonial card -->
                         <img src="assets/img/testimonial-perfil-4.png" alt="image" class="testimonial__img">
-
-                           <h2 class="testimonial__title">Rial Loz</h2>
-                           <p class="testimonial__description">
+                          <!-- testimonial image -->
+                           <h2 class="testimonial__title">Rial Loz</h2> <!-- testimonial title -->
+                           <p class="testimonial__description"> <!-- testimonial description -->
                               The best website to buy books, the purchase 
                               is very easy to make and has great discounts.
-                           </p>
-
-                           <div class="testimonial__stars">
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-fill"></i>
-                              <i class="ri-star-half-fill"></i>
+                           </p> <!-- testimonial description -->
+ 
+                           <div class="testimonial__stars"> <!-- testimonial stars -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-fill"></i> <!-- star -->
+                              <i class="ri-star-half-fill"></i> <!--half star -->
                               
                            </div>
                      </article>
@@ -911,86 +950,86 @@
       </main>
 
       <!--==================== FOOTER ====================-->
-      <footer class="footer">
-         <div class="footer__container container grid">
+      <footer class="footer">    
+         <div class="footer__container container grid"> <!-- footer container -->
            <div>
-            <a href="#" class="footer__logo">
+            <a href="#" class="footer__logo"> <!-- logo -->
                <i class="ri-book-3-line"></i>E-Book
-            </a>
+            </a> <!-- logo -->
 
-            <p class="footer__description">
-               Find and explore the best <br>
+            <p class="footer__description"> <!-- footer description -->
+               Find and explore the best <br> 
                eBooks from all your <br>
                favorite writers.
-            </p>
+            </p> <!-- footer description -->
            </div>
 
-           <div class="footer__data grid">
+           <div class="footer__data grid"> <!-- footer data -->
                <div>
-                 <h3 class="footer__title">About</h3>
+                 <h3 class="footer__title">About</h3> <!-- about title -->
 
-                <ul class="footer__links">
+                <ul class="footer__links"> <!-- about links -->
                   <li>
-                     <a href="#" class="footer__link">Awards</a>
+                     <a href="#" class="footer__link">Awards</a> <!-- awards link -->
                   </li>
                   <li>
-                     <a href="#" class="footer__link">FAQs</a>
+                     <a href="#" class="footer__link">FAQs</a> <!-- faqs link -->
                   </li>
                   <li>
-                     <a href="#" class="footer__link">Privacy policy</a>
+                     <a href="#" class="footer__link">Privacy policy</a> <!-- privacy policy link -->
                   </li>
                   <li>
-                     <a href="#" class="footer__link">Terms of services</a>
+                     <a href="#" class="footer__link">Terms of services</a> <!-- terms of services link -->
                   </li>
                </div>
                <div>
-                  <h3 class="footer__title">Company</h3>
+                  <h3 class="footer__title">Company</h3> <!-- company title -->
  
-                 <ul class="footer__links">
+                 <ul class="footer__links">  <!-- company links -->
                    <li>
-                      <a href="#" class="footer__link">Blogs</a>
+                      <a href="#" class="footer__link">Blogs</a> <!-- blogs link -->
                    </li>
                    <li>
-                      <a href="#" class="footer__link">Community</a>
+                      <a href="#" class="footer__link">Community</a> <!-- community link -->
                    </li>
                    <li>
-                      <a href="#" class="footer__link">Our team</a>
+                      <a href="#" class="footer__link">Our team</a> <!-- our team link -->
                    </li>
                    <li>
-                      <a href="#" class="footer__link">Help center</a>
+                      <a href="#" class="footer__link">Help center</a> <!-- help center link -->
                    </li>
                 </div>
                 <div>
-                  <h3 class="footer__title">Contact</h3>
+                  <h3 class="footer__title">Contact</h3> <!-- contact title -->
  
-                 <ul class="footer__links">
+                 <ul class="footer__links"> <!-- contact links -->
                    <li>
-                      <address class="footer__info">
+                      <address class="footer__info">  <!-- address -->
                         Av. Hacienda <br>
                         Lima 4321, Perú 
-                      </address>
+                      </address> <!-- address -->
                    </li>
 
                    <li>
-                     <address class="footer__info">
+                     <address class="footer__info"> <!-- address -->
                         e.book@email.com <br>
                         0987-654-321
-                     </address>
+                     </address> <!-- address -->
                   </li>
                   
                 </div>
                 <div>
-                  <h3 class="footer__title">Social</h3>
+                  <h3 class="footer__title">Social</h3> <!-- social title -->
  
-                 <div class="footer__social">
+                 <div class="footer__social"> <!-- social links -->
                    <a href="https://www.facebook.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-facebook-circle-fill"></i>
+                     <i class="ri-facebook-circle-fill"></i> <!-- facebook link -->
                    </a>
                    <a href="https://www.instagram.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-instagram-line"></i>
+                     <i class="ri-instagram-line"></i> <!-- instagram link -->
                    </a>
                    <a href="https://twitter.com/" target="_blank" class="footer__social-link">
-                     <i class="ri-twitter-x-line"></i>
+                     <i class="ri-twitter-x-line"></i> <!-- twitter link -->
                   </a>
                   
                  </div>
@@ -998,14 +1037,14 @@
            </div>
          </div>
 
-         <span class="footer__copy">
+         <span class="footer__copy"> </span> <!-- footer copy -->
             &#169; All Rights Reserved By Mohd Rashid
-         </span> 
+         </span>  <!-- footer copy -->
       </footer>
 
       <!--========== SCROLL UP ==========-->
-      <a href="#" class="scrollup" id="scroll-up">
-         <i class="ri-arrow-up-line"></i>
+      <a href="#" class="scrollup" id="scroll-up"> 
+         <i class="ri-arrow-up-line"></i> <!-- arrow up -->
       </a>
       <!--=============== SCROLLREVEAL ===============-->
       <script src="assets/js/scrollreveal.min.js"></script>

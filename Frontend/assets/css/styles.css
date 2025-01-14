@@ -258,7 +258,7 @@ nav.logo{
 /*=============== SEARCH ===============*/
 /* CSS Fixes */
 .search {
-  position: fixed;
+  position: fixed; 
   top: -100%;
   left: 0;
   width: 100%;
