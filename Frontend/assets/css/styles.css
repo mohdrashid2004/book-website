@@ -772,6 +772,7 @@ content:'';
   bottom: 6rem;
 }
 /*=============== BREAKPOINTS ===============*/
+
 /* For small devices */
 @media screen and (max-width: 320px){
   .container{
